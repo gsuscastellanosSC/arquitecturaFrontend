@@ -32,3 +32,78 @@ nav li a{
 nav li a:hover{
   color: white;
 }
+
+.main_section{
+  padding: 15%;
+  text-align: center;
+}
+
+.products{
+  background-image: url("../images/curve.png");
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+
+.product{
+  padding: 10px;
+  margin-top: -240px;
+
+}
+
+.product .content{
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 0 1px #c1bcbc;
+}
+
+.image_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: #7ACC2D;
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.main_button:hover{
+  background-color: #5E9E22;
+}
+
+.elements{
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+.element{
+  padding: 10px;
+  margin-top: -240px;
+}
+
+.element .content1{
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 0 1px #c1bcbc;
+}
+
+.image_elemen{
+  text-align: center;
+}
+
+.peoples{
+  background-image: url("../images/curve.png");
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
