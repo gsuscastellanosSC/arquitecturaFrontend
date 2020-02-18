@@ -1,15 +1,33 @@
+/*Variables*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root{
+  /*Color*/
+  --green-color:#7ACC2D;
+  --white-color:white;
+  --black-color:#313337;
+
+  /*Espaciado*/
+  --space:10px;
+
+  /*Tipografía*/
+  --normal:12px;
+
+  /*Box shadow*/
+  --box:0 0 2px #e6e5e9;
+}
+/*Variables*/
 html, body{
   padding: 0px;
   margin: 0px;
-  font-size: 12px;
-  font-family: Helvetica;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
 }
 
 nav{
   display: flex;
-  background-color: #7ACC2D;
-  padding: 10px;
-  color:  white;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color:  var(--white-color);
   justify-content: space-between;
   align-items: center;
 }
@@ -25,13 +43,14 @@ nav li{
 }
 
 nav li a{
-  color: black;
+  color: var(--black-color);
   text-decoration: none;
 }
 
 nav li a:hover{
-  color: white;
+  color: var(--white-color);
 }
+/*main section*/
 
 .main_section{
   padding: 15%;
@@ -39,24 +58,26 @@ nav li a:hover{
 }
 
 .products{
+  display: flex;
   background-image: url("../images/curve.png");
   max-height: 50px;
   background-size: cover;
   background-position: center top;
-  padding: 20%;
-  display: flex;
+  padding: 15%;
+  justify-content: center;
+  justify-content:space-between;
 }
 
 .product{
-  padding: 10px;
+  padding: var(--space);
   margin-top: -240px;
 
 }
 
 .product .content{
-  background-color: white;
+  background-color: var(--white-color);
   padding: 15px;
-  box-shadow: 0 0 1px #c1bcbc;
+  box-shadow: var(--box);
 }
 
 .image_content{
@@ -64,46 +85,40 @@ nav li a:hover{
 }
 
 .main_button{
-  background-color: #7ACC2D;
+  background-color: var(--green-color);
   width: 100%;
-  padding: 10px;
+  padding: var(--space);
   font-size: 17px;
-  color: white;
+  color: var(--white-color);
   border: 0;
-  cursor: pointer;
+  cursor: pointer; /*Cursor de manito*/
   border-radius: 2px;
 }
 .main_button:hover{
   background-color: #5E9E22;
 }
 
-.elements{
+.sections{
+  display: flex;
   max-height: 50px;
   background-size: cover;
   background-position: center top;
   padding: 20%;
-  display: flex;
-}
-.element{
-  padding: 10px;
-  margin-top: -240px;
+  justify-content: center;
+  justify-content:space-between;
 }
 
-.element .content1{
-  background-color: white;
+.section{
+  padding: var(--space);
+  margin-top: -80px;
+}
+
+.section .contentSection{
   padding: 15px;
-  box-shadow: 0 0 1px #c1bcbc;
+  box-shadow: var(--box);
+  text-align: justify;
 }
 
-.image_elemen{
+.img_contentSection{
   text-align: center;
-}
-
-.peoples{
-  background-image: url("../images/curve.png");
-  max-height: 50px;
-  background-size: cover;
-  background-position: center top;
-  padding: 20%;
-  display: flex;
 }
