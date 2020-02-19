@@ -1,153 +1,165 @@
-/*Variables*/
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+/*------ Variables */
 :root{
-  /*Color*/
-  --green-color:#7ACC2D;
-  --white-color:white;
-  --black-color:#313337;
-
-  /*Espaciado*/
-  --space:10px;
-
-  /*Tipografía*/
+  /*------ Colores */
+  --green-color: #7ACC2D;
+  --black-color: #313337;
+  --white-color: white;
+  /*------ Tipografía */
   --normal:12px;
-
-  /*Box shadow*/
-  --box:0 0 2px #e6e5e9;
+  /*------ Espaciado */
+  --space:10px;
+  --space-2:20px;
 }
-/*Variables*/
+
+/* -------------------------------------------  */
 html, body{
-  padding: 0px;
-  margin: 0px;
+  margin:0;
+  padding: 0;
+  font-family: helvetica;
+  color: var(--black-color);
+}
+
+p{
   font-size: var(--normal);
-  font-family: 'Open Sans', sans-serif;
 }
 
 nav{
   display: flex;
-  background-color: var(--green-color);
-  padding: var(--space);
-  color:  var(--white-color);
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: var(--space);
+  min-height: 60px;
+  background-color: var(--green-color);
 }
 
+nav a{
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal);
+}
 
-nav ul{
+nav a:hover{
+  color: var(--white-color);
+}
+
+nav ul {
   display: flex;
 }
 
-nav li{
-  padding-left: 20px;
+nav ul li{
+  padding-right: 20px;
   list-style: none;
 }
 
-nav li a{
-  color: var(--black-color);
-  text-decoration: none;
+hr{
+  opacity: .2;
 }
 
-nav li a:hover{
-  color: var(--white-color);
-}
-/*main section*/
+/* ------------------------------------------- MAIN SECTION */
 
 .main_section{
-  padding: 15%;
   text-align: center;
+  padding: 15%;
 }
 
+/* -------------------------------------------  PRODUCTOS */
+
 .products{
-  display: flex;
   background-image: url("../images/curve.png");
-  max-height: 50px;
-  background-size: cover;
-  background-position: center top;
   padding: 15%;
-  justify-content: center;
-  justify-content:space-between;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 95px;
+  background-size: cover;
+
 }
 
 .product{
-  padding: var(--space);
-  margin-top: -240px;
-
+  padding: 20px;
+  margin-top: -226px;
 }
 
-.product .content{
-  background-color: var(--white-color);
-  padding: 15px;
-  box-shadow: var(--box);
-}
-
-.image_content{
+.image-product{
   text-align: center;
 }
 
-.main_button{
+.content{
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+
+.main_btn{
+  padding: var(--space);
   background-color: var(--green-color);
   width: 100%;
-  padding: var(--space);
-  font-size: 17px;
-  color: var(--white-color);
-  border: 0;
-  cursor: pointer; /*Cursor de manito*/
+  border: 0px;
   border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
 }
-.main_button:hover{
-  background-color: #5E9E22;
+.main_btn:hover{
+  background-color: #63a426;
 }
 
-.sections{
+/* Beneficios */
+.beneficios{
+  padding: 10%;
   display: flex;
-  max-height: 50px;
-  background-size: cover;
-  background-position: center top;
-  padding: 20%;
-  justify-content: center;
-  justify-content:space-between;
 }
 
-.section{
-  padding: var(--space);
-  margin-top: -80px;
+.beneficio{
+  text-align: center;
+  padding: 20px;
 }
 
-.section .contentSection{
-  padding: 15px;
-  box-shadow: var(--box);
+.beneficio img{
+  max-height: 100px
+}
+
+.text_beneficio{
   text-align: justify;
 }
 
-.img_contentSection{
-  text-align: center;
-}
-
-.titlePeople{
-  margin-bottom: -230px;
-  text-align: center;
-}
-.peoples{
+/* Mentions */
+.mentions{
   display: flex;
-  max-height: 50px;
-  background-size: cover;
-  background-position: center top;
-  padding: 20%;
-  justify-content: center;
-  justify-content:space-between;
+  padding: 5%;
 }
-
-.people{
-  padding: var(--space);
-  margin-top: -80px;
+.mention img{
+  width: 100%;
 }
-
-.people .contentPeople{
-  text-align: justify;
-  box-shadow: 2px 2px 2px #DFDFD7;
-  margin-right: 21px;
-}
-
-.image_People{
+h2.mention_title{
   text-align: center;
+}
+.mention{
+  padding: var(--space);
+}
+.content_mention{
+  box-shadow: 0px 0 2px 1px #e6e5e9;
+}
+.mention .text{
+  padding: var(--space);
+}
+
+/* ------------------------------------------- Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
 }
