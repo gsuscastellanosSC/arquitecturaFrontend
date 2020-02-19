@@ -122,3 +122,32 @@ nav li a:hover{
 .img_contentSection{
   text-align: center;
 }
+
+.titlePeople{
+  margin-bottom: -230px;
+  text-align: center;
+}
+.peoples{
+  display: flex;
+  max-height: 50px;
+  background-size: cover;
+  background-position: center top;
+  padding: 20%;
+  justify-content: center;
+  justify-content:space-between;
+}
+
+.people{
+  padding: var(--space);
+  margin-top: -80px;
+}
+
+.people .contentPeople{
+  text-align: justify;
+  box-shadow: 2px 2px 2px #DFDFD7;
+  margin-right: 21px;
+}
+
+.image_People{
+  text-align: center;
+}
